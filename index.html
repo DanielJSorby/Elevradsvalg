@@ -8,13 +8,39 @@
 	</head>
 	<body>
 		<div class="bg-container"></div>
-		<input type="text" id="navn" value="Hei" />
-		<input type="password" id="itsMeId" />
-		<input type="password" id="itsMeIdCheck" />
-		<select name="Stem" id="stemme">
-			<option value="stemme">-- Stem Her --</option>
-		</select>
-		<button onclick="submit()">Submit</button>
+		<div class="navbar">
+			<div class="logo"><h1>Stem</h1></div>
+			<div class="nav-links">
+				<a href="#">Om Oss</a>
+				<a href="#">Kandidater</a>
+			</div>
+		</div>
+		<div class="stem-bokser">
+			<input
+				type="text"
+				id="navn"
+				class="stor-boks boks"
+				placeholder="Navn"
+			/>
+			<div class="id-koder">
+				<input
+					type="password"
+					id="itsMeId"
+					placeholder="Its me ID Kode"
+					class="liten-boks boks"
+				/>
+				<input
+					type="password"
+					id="itsMeIdCheck"
+					placeholder="Bekreft Koden"
+					class="liten-boks boks"
+				/>
+			</div>
+			<select name="Stem" id="stemme" class="boks">
+				<option value="stemme">-- Stem Her --</option>
+			</select>
+			<button onclick="submit()">Submit</button>
+		</div>
 	</body>
 	<script src="./index.js"></script>
 </html>
